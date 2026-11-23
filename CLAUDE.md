@@ -9,6 +9,7 @@ SUU-themed flipbook for the SUU Head Start Preschool annual report, hosted on Gi
 - `js/main.js`: boot, deep links (`#p=N`).
 - `js/book.js`: wraps StPageFlip. Book pages ≠ PDF pages (blank page padded before the back cover when the count is odd); use `bookOf()` / `pdfAt()`. Emits `change` (`cause`: `flip` | `riffle` | `layout`), `layout`, `flipstart`.
 - `js/nav.js` dock + keyboard + wheel · `search.js` (uses `book/search.json`, not PDF.js) · `zoom.js` (lazy-loads PDF.js for sharp zoom; falls back to the `lg` image) · `outro.js` (end card with the Thunderbird strike; section strikes when `sectionStrikes` is on) · `lightning.js` · `sound.js` (Web Audio synth, off by default) · `icons.js` · `util.js`.
+- `scripts/make_qr.py`: writes `assets/qr-code.svg|png`, the branded QR to the site (segno, version 6-H; dots within 0.82 modules of the logo's opaque pixels are dropped). Given the SPARC URL it reproduces that repo's `qr-code.svg` exactly. segno's `ALIGNMENT_POS` table starts at version 2.
 - `assets/headstart-logo.png`: top-bar lockup (red SUU from the SPARC lockup + "Head Start Preschool" in Merriweather Bold).
 - `vendor/`: page-flip 2.0.7 and pdfjs-dist 4.10.38. PDF.js files are renamed `.mjs` → `.js` so `python3 -m http.server` serves them with a JavaScript MIME type.
 - `book/`, `_site/`: build output, gitignored.

@@ -32,6 +32,15 @@ pip install pymupdf pillow
 scripts/preview.sh          # then open http://localhost:8000
 ```
 
+## QR code
+
+`assets/qr-code.svg` (vector, for print) and `assets/qr-code.png` (1568 px) link to the site, in the same style as the SPARC report's code: ink dots, SUU-red corners, and the Thunderbird in the middle. To rebuild them, for example for a new URL:
+
+```sh
+pip install segno pymupdf pillow
+python3 scripts/make_qr.py                    # or: --url https://…  --title "…"
+```
+
 ## One-time GitHub setup
 
 Settings → Pages → Build and deployment → Source: **GitHub Actions**.
