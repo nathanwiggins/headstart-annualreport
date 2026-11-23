@@ -1,0 +1,21 @@
+{
+  "title": "Annual Report",
+  "year": "2025–2026",
+  "shortName": "Head Start",
+  "organization": "SUU Head Start Preschool",
+  "university": "Southern Utah University",
+  "description": "Flip through SUU Head Start Preschool's 2025–2026 year: enrollment, kindergarten readiness, federal reviews, parent involvement, and fiscal data.",
+  "downloadName": "SUU Head Start Annual Report 2025-2026.pdf",
+  "outroTitle": "Thanks for reading.",
+  "sectionStrikes": false,
+  "addBackCover": false,
+  "sections": [
+    { "title": "What's New", "page": 3 },
+    { "title": "Mission & Goals", "page": 4 },
+    { "title": "Enrollment", "page": 5 },
+    { "title": "Kindergarten Preparedness", "page": 6 },
+    { "title": "Federal Reviews", "page": 7 },
+    { "title": "Parent Involvement", "page": 8 },
+    { "title": "Fiscal Data", "page": 10 }
+  ]
+}
